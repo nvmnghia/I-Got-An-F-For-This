@@ -1,0 +1,94 @@
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+
+<div class="box box-primary" style="padding: 5px">
+    <div class="box-header">
+        <div>
+            <div class='btn-toolbar pull-right'>
+                <button id="reset-filter" class="btn btn-primary">Reset bộ lọc</button>
+            </div>
+            <h2>Danh sách công việc<h2>
+        </div>
+    </div>
+    <div class="box-body">
+        <div class="dataTables_wrapper form-inline dt-bootstrap">
+            <table id="tickets" class="table" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tên công việc</th>
+                        <th>Mức độ ưu tiên</th>
+                        <th>Người yêu cầu</th>
+                        <th>Người thực hiện</th>
+                        <th>Ngày tạo</th>
+                        <th>Ngày hết hạn</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th>Tên công việc</th>
+                        <th>Mức độ ưu tiên</th>
+                        <th>Người yêu cầu</th>
+                        <th>Người thực hiện</th>
+                        <th>Ngày tạo</th>
+                        <th>Ngày hết hạn</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <row id="filter-mobile">
+                <h4><strong>Filter</strong></h4>
+                <div>
+                    <div class="form-group">
+                        <label><strong>Name</strong></label>
+                        <input id="filter-name" class="form-control" type="text" style="width: 100%; height: 32px;">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label><strong>Requester</strong></label>
+                        <select id="filter-requester" class="form-control" multiple="multiple" style="width: 100%;"></select>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label><strong>Assignee</strong></label>
+                        <select id="filter-assignee" class="form-control" style="width: 100%;" multiple="multiple"></select>
+                    </div>
+                </div>
+                <table class="table">
+                    <tr>
+                        <td width="50%"><div>
+                            <div class="form-group">
+                                <label><strong>Priority</strong></label>
+                                <select id="filter-priority" class="form-control" style="width: 100%; height: 32px;"><option value=""></select>
+                            </div>
+                        </div></td>
+                        <td width="50%"><div>
+                            <div class="form-group">
+                                <label><strong>State</strong></label>
+                                <select id="filter-state" class="form-control" style="width: 100%; height: 32px;"><option value=""></select>
+                            </div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td width="50%"><div>
+                            <div class="form-group">
+                                <label><strong>Created Date</strong></label>
+                                <select id="filter-created-date" class="form-control" style="width: 100%; height: 32px;"><option value=""></select>
+                            </div>
+                        </div></td>
+                        <td width="50%"><div>
+                            <div class="form-group">
+                                <label><strong>Expiration Date</strong></label>
+                                <select id="filter-expiration-date" class="form-control" style="width: 100%; height: 32px;"><option value=""></select>
+                            </div>
+                        </div></td>
+                    </tr>
+                </table>
+            </row>
+        </div>
+    </div>
+</div>

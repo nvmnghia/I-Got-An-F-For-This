@@ -1,0 +1,8 @@
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.select2-selection:focus {
+	border-color: #3c8dbc; !important
+}

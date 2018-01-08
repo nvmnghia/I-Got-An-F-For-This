@@ -1,0 +1,58 @@
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.filter-select {
+	width: 100%; !important
+	height: 22px; !important
+}
+
+thead th:nth-child(1) {
+	width: 3%; !important
+}
+
+thead th:nth-child(2) {
+	width: 22%; !important
+}
+
+thead th:nth-child(3) {
+	width: 10%; !important
+}
+
+thead th:nth-child(4) {
+	width: 13%; !important
+}
+
+thead th:nth-child(5) {
+	width: 22%; !important
+}
+
+thead th:nth-child(6) {
+	width: 10%; !important
+}
+
+thead th:nth-child(7) {
+	width: 10%; !important
+}
+
+thead th:nth-child(10) {
+	width: 10%; !important
+}
+
+@media screen and (max-width: 767px) {
+    #tickets_length {
+        float: left;
+    }
+
+    #tickets_filter {
+    	float: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+	#filter-mobile {
+		display: none;
+	}
+}

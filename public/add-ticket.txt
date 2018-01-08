@@ -1,0 +1,89 @@
+
+	
+	<div class="box box-primary" style="padding: 5px">
+	    <div class="box-header">
+	        <h2>New request</h2>
+	    </div>
+
+	    <div class="box-body">
+	    	<form>
+	    		<div class="row">
+		    		<div id="input-name" class="form-group col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
+		    			<label><strong>Request name *</strong><span></span></label>
+		    			<input type="text" class="form-control" id="name" placeholder="Enter request name">
+		    		</div>
+		    	</div>
+
+		        <div class="row">
+		            <div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-sm-12 col-xs-12">
+		                <div id="input-priority" class="form-group">
+		                    <label><strong>Priority</strong></label>
+			                <select id="priority" class="form-control">
+			                	<option value="1">Low priority</option>
+						        <option value="2" selected="selected">Normal priority</option>
+						        <option value="3">High priority</option>
+						        <option value="4">Critical</option>
+			                </select>
+		                </div>
+
+		                <div id="input-division" class="form-group">
+							<label><strong>Division *</strong></label>
+			                <select id="division" class="form-control">
+			                	<option id="division-placeholder" style="display: none;"
+			                		selected="selected" value="0">Select a division</option>
+			                	<option value="1">Hà Nội</option>
+			                	<option value="2">Đà Nẵng</option>
+			                </select>
+		                </div>
+		            </div>
+
+		            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+		                <div id="input-expiration-date" class="form-group">
+		                    <label><strong>Deadline *</strong></label>
+
+			            	<div class="input-group date">
+							    <div class="input-group-addon">
+							    	<i class="fa fa-calendar"></i>
+							    </div>
+								<input type="text" class="form-control pull-right" id="expiration-date" 
+									readonly="readonly" style="background:white;" placeholder="dd/mm/yyyy">
+							</div>
+		                </div>
+
+		                <div id="input-involved-employees" class="form-group">
+		                    <label><strong>Involved</strong></label>
+			            	<div>
+			            		<select id="involved-employees" class="form-control" name="involved-employees" multiple="multiple">
+								    <option value="P10">personel 10</option>
+								</select>
+			            	</div>
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="row">
+		        	<div id="input-content" class="form-group col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
+		                <label><strong>Content *</strong></label>
+		                <textarea id="content" placeholder="Write something nice..." rows="9" style="width: 100%;"></textarea>
+		            </div>
+		        </div>
+
+		        <div class="row">
+		        	<div id="input-attached-file" class="form-group col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
+		    			<label><strong>Attachment</strong></label>
+		    			<input id="attached-file" name="attached-file" type="file">
+		    		</div>
+		        </div>
+
+		        <div class="row">
+		        	<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
+		        		<hr/>
+		        		<div class="btn-toolbar pull-right">
+		        			<button id="submit" type="button" class="btn btn-primary">Submit</button>
+		        			<button id="cancel" class="btn btn-default">Cancel</button>
+		        		</div>
+		        	</div>
+		        </div>
+	    	</form>
+	    </div>
+	</div>

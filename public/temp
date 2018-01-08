@@ -1,0 +1,33 @@
+Format JSON:
+
+1. Gọi bảng
+	Gửi request AJAX ntn để lấy bảng, theo 2 tiêu chí: 
+	- Loại ticket/request (của tôi, tôi yêu cầu, của nhóm, liên quan)
+	- Trạng thái xử lí request (mới, đang xử lí, đã xử lí, hết hạn)
+
+2. Trả về bảng
+	Theo dạng này.
+[
+	[
+		"100",
+		"May tinh",
+		"3",
+		"ikp",
+		"efgh",
+		"01/02/2017",
+		"01/01/2017",
+		"1"
+	]
+]
+
+3. Bình luận
+	Gửi lên theo dạng này
+
+	"ticket_id": 
+	"employee_id":
+	"content":
+	"type": 0: bình thường, 1: đánh giá?, 2-3-4-5: thay đổi mức ưu tiên, deadline, assign, trạng thái công việc
+	"created_at":
+	"updated_at":
+
+4. 

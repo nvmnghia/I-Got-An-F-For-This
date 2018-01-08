@@ -1,0 +1,145 @@
+<link href="{{ URL::asset('/plugins/bootstrap3-wysihtml5.min.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ URL::asset('/plugins/jquery-comments.min.css') }}" rel="stylesheet" type="text/css"/>
+
+<style type="text/css">
+    tr td {
+        border: 0px;
+    }
+
+    #attachment {
+        height: 250px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .comment-wrapper > .wrapper {
+        background-color: white;
+    }
+
+    .comment-wrapper > .wrapper > .content {
+        min-height: 0px;
+    }
+</style>
+
+<div class="box box-primary" style="padding: 5px">
+    <div class="box-header">
+        <div>
+            <div class='btn-toolbar pull-right'>
+                <button id="edit" class="btn btn-primary">Edit</button>
+                <button id="delete" class="btn btn-danger">Delete</button>
+            </div>
+            <h2>Tên công việc<h2>
+        </div>
+    </div>
+    <div class="box-body">
+
+        <div class="row">
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Created by:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">nvmnghia</h5>
+            </div>
+
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Priority:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">nvmnghia</h5>
+            </div>
+
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Date created:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">1/1/1 1:1:1</h5>
+            </div>
+
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Deadline:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">1/1/1 1:1:1</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>State:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%"><small class="label bg-blue">New</small></h5>
+            </div>
+
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Involved:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">nvmnghia</h5>
+            </div>
+
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Division:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">Ha noi</h5>
+            </div>
+
+            <div class="col-md-3" >
+                <h5 style="display: inline-block; float: left; width: 35%"><strong>Assigned to:</strong></h5>
+                <h5 style="display: inline-block; float: right; width: 65%">nvmnghia</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8" >
+                <h5><strong>Content:</strong></h5>
+                <div style="height: 250px; overflow: hidden; overflow-y: auto;">
+                    <p>This is a paragraph. Put sth here.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h5><strong>Attachment:</strong></h5>
+                <div>
+                    <ul id="attachment" class="mailbox-attachments">
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+
+                            <div class="mailbox-attachment-info">
+                                <a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> Karma Sutra part 1.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                    1,234 KB
+                                    <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-word-o"></i></span>
+
+                            <div class="mailbox-attachment-info">
+                                <a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> Karma Sutra part 2.docx</a>
+                                <span class="mailbox-attachment-size">
+                                    1,245 KB
+                                    <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="mailbox-attachment-icon has-img"><img src="" alt=" some attachment"></span>
+
+                            <div class="mailbox-attachment-info">
+                                <a href="#" class="mailbox-attachment-name"><i class="fa fa-camera"></i> Yui Hatano.png</a>
+                                <span class="mailbox-attachment-size">
+                                    2.67 MB
+                                    <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box box-primary" style="padding: 5px">
+    <div class="box-header">
+        <h3 class="box-title">Comment<h3>
+    </div>
+    <div class="box-body">
+        <div class="row">
+            <div id="comment-box" class="container-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
